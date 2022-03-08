@@ -1,0 +1,53 @@
+/* estilos del contenedor principal del header */
+.container-header{ border-bottom: 1px solid rgba(255,255,255,.08); border-bottom-width: 1px; padding: 10px 0; }
+/* estilos de la lista desordenada del contenedor principal del header */
+.container-header ul, .container-header ul li{ -ms-align-items: center; align-items: center; display: -webkit-flex; display: -moz-flex; display: -ms-flex; display: -o-flex; display: flex; list-style: none; margin-bottom: 0; padding: 10px 0; width: 100%; }
+/* estilos de los items del contenedor principal del header */
+.container-header ul li{ height: 50px; min-width: 50px; width: auto; }
+/* estilos para el último item de la lista */
+.container-header ul li:last-child{ margin-left: 0; position: absolute; right: 0; }
+/* estilos de los links del contenedor principal del header */
+.container-header ul li a{ -ms-align-items: center; align-items: center; color: #fff; display: -webkit-flex; display: -moz-flex; display: -ms-flex; display: -o-flex; display: flex; justify-content: center; height: 100%; opacity: .8; filter: opacity(80); padding: 7px; width: 100%; }
+.container-header ul li a:hover, .container-header ul li a:focus, .container-header ul li a:active{ opacity: 1; filter: opacity(100); }
+/* estilos para las imagenes de los links del contenedor principal del header */
+.container-header ul li a img{ margin-left: 10px; }
+
+.container-header ul li .form-search{ position: absolute; width: calc(100% - 20px); z-index: 999; }
+/* estilos para el campo de busqueda de la cabecera */
+.container-header ul li input#search-header{ background-color: rgba(255, 255, 255, 1); border: none; border-radius: 30px; color: #666; font-size: 15px; height: 45px; padding: 7px 25px; padding-left: 35px; padding-right: 35px; outline: none; letter-spacing: .5px; width: 100%; }
+/* estilos para el placeholder del campo de busqueda de la cabcera */
+.container-header ul li input::-webkit-input-placeholder { color: #555; }
+/* estilos para el placeholder del campo de busqueda de la cabcera */
+.container-header ul li input:-ms-input-placeholder { color: #555; }
+/* estilos para el placeholder del campo de busqueda de la cabcera */
+.container-header ul li input::placeholder { color: #555; }
+/* estilos para el icono del botón de búscar */
+.container-header ul li .btn-search{ background: transparent; border: none; color: #1565c0; cursor: pointer; position: absolute; top: 10px; right: 7px; }
+/* estilos para el boton de cerrar el panel de búscar */
+.container-header ul li .close-panel-search{ background: transparent; border: none; color: #1565c0; cursor: pointer; display: inline; position: absolute; top: 6px; left: 7px; width: auto; }
+
+
+@media ( min-width: 768px )
+{
+	/* estilos de la lista desordenada del contenedor principal del header */
+	.container-header ul{ justify-content: flex-end; }
+	/* estilos para el primer item de la lista */
+	.container-header ul li:first-child{ position: absolute; left: 15px; transition-duration: .1s; width: 270px; }
+	/* estilos para el primer item de la lista cuando le hagan focus al input de búscar */
+	.container-header ul li:first-child.active-search-header{ transition-duration: .1s; width: 370px; }
+	/* estilos para el formulario del primer item de la lista */
+	.container-header ul li:first-child form{ width: 100%; }
+	/* estilos para el último item de la lista */
+	.container-header ul li:last-child{ position: relative; }
+	/* estilos para el campo de busqueda de la cabecera */
+	.container-header ul li input#search-header{ background-color: rgba(255, 255, 255, .86); padding-left: 25px; }
+	/* estilos para el campo de busqueda de la cabecera cuando le hagan focus */
+	.container-header ul li input#search-header:focus{ background-color: rgba(255, 255, 255, 1); }
+}
+
+
+@media ( min-width: 999px )
+{
+	/* estilos de los items del contenedor principal del header */
+	.container-header ul li{ height: 50px; margin: 0px 10px; min-width: 50px; width: auto; }
+}

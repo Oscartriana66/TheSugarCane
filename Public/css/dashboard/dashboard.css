@@ -1,0 +1,22 @@
+@import './header.css';
+
+/* esitlos para el contenido de la página */
+body{ background-color: #f8f9fe; overflow-x: hidden !important; }
+.container-main{ padding-left: 0 !important; }
+/* estilos para el contenedor principal que le agregan un div de fondo azul de 100px de alto */
+.container-main::before{ background-color: #1565c0 !important; content: ''; display: block; position: absolute; height: 110px; width: 100%; }
+/* estilos para la card cuando se ejecute un formulario */
+.content-loader{ -ms-align-items: center; align-items: center; background-color: rgba(0, 0, 0, 0.7); border-radius: 5px; display: -webkit-flex; display: -moz-flex; display: -ms-flex; display: -o-flex; display: flex; height: 100%; justify-content: center; position: absolute; top: 0; width: 100%; z-index: 9; }
+
+/* esitlos de la descripción del breadcrumb */
+.container-breadcrumb .description-breadcrumb{ -ms-align-items: center; align-items: center; color: white; display: -webkit-flex; display: -moz-flex; display: -ms-flex; display: -o-flex; display: flex; justify-content: space-between; }
+/* esitlos de los links de la descripción del breadcrumb */
+.container-breadcrumb .description-breadcrumb a{ color: white; opacity: .8; filter: opacity(80); }
+/* esitlos de los links de la descripción del breadcrumb */
+.container-breadcrumb .description-breadcrumb a:hover, .container-breadcrumb .description-breadcrumb a:focus, .container-breadcrumb .description-breadcrumb a:active, .container-breadcrumb .description-breadcrumb a:last-child{ color: white; opacity: 1; filter: opacity(100); }
+/* esitlos del último link de la descripción del breadcrumb */
+.container-breadcrumb .description-breadcrumb a:last-child{ color: #ccc; cursor: default; }
+/* esitlos de los links de la descripción del breadcrumb para agregar el separador entre ellos */
+.container-breadcrumb .description-breadcrumb a::after{ color: #ddd; content: '>'; margin: 0 10px; }
+/* esitlos del último link de la descripción del breadcrumb para eliminar el separador entre ellos */
+.container-breadcrumb .description-breadcrumb a:last-child::after{ content: ''; margin: 0px; }

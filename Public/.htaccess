@@ -1,0 +1,19 @@
+<IfModule mod_rewrite.c>
+    Options -Indexes
+	Options +FollowSymLinks
+    RewriteEngine On
+    RewriteCond %{REQUEST_URI} ^system.*
+    RewriteRule ^(.*)$ index.php?url=$1 [L]
+    RewriteCond %{REQUEST_URI} ^application.*
+    RewriteRule ^(.*)$ index.php?url=$1 [L]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ index.php?url=$1 [L]
+    
+    # ForceSSL
+    #RewriteCond %{HTTPS} off
+    #RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+    #Redirección error 403
+    ErrorDocument 403 RUTA_URL/error403
+</IfModule>

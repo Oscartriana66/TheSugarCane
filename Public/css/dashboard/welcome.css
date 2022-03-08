@@ -1,0 +1,57 @@
+/* estilos para el contenedor de mas post mas populares*/
+.content-more-popular, .content-list-comments{ max-height: 410px; overflow-y: auto; }
+/* estilos para los items del contenedor de mas post mas populares*/
+.item-more-popular{ margin-bottom: 20px; overflow: hidden; }
+/* estilos para el último item del contenedor de mas post mas populares*/
+.item-more-popular:last-child{ margin-bottom: 0px; }
+/* estilos para la imagen de los items del contenedor de mas post mas populares*/
+.item-more-popular .img-more-popular{ max-height: 300px; max-width: 400px; }
+/* estilos para el footer de los items del contenedor de mas post mas populares*/
+.item-more-popular .footer-content-more-popular{ border: 0; border-bottom: 2px dashed rgba(0,0,0,.17); }
+/* estilos para el footer del último item del contenedor de mas post mas populares*/
+.item-more-popular:last-child .footer-content-more-popular{ border: 0; border-bottom: 0px dashed rgba(0,0,0,.17); }
+/* estilos para el destacado de los items del contenedor de mas post mas populares*/
+.highlight-item-more-popular{ background-color: #42a5f5; box-shadow: 1px 2px 3px #666; color: #fff; right: 0px; margin-right: 18px; padding: 7px; position: absolute; width: 30%; text-align: center;  }
+/* estilos para el icono de destacado de los items del contenedor de mas post mas populares*/
+.highlight-item-more-popular i{ font-size: 16px; }
+
+/* esitlos para el contenido del comentario */
+.item-comment .content-comment{ border-radius: 5px; min-height: 80px; max-height: 160px; overflow-y: auto; }
+/* esitlos para el tringaulo del contenido del comentario */
+.item-comment .content-comment:before{ border-style: solid; border-width: 20px 20px 20px 0px; border-color: transparent #e0e0e0 transparent transparent; content: ''; left: 0; position: absolute; top: 20px; }
+/* esitlos para el contenido del comentario cuando este destacado */
+.item-comment .content-comment.active{ background: #ffd54f !important; }
+/* esitlos para el tringaulo del contenido del comentario cuando este destacado */
+.item-comment .content-comment.active:before{ border-color: transparent #ffd54f transparent transparent; }
+/* esitlos para la imagen del contenido del comentario */
+.item-comment .img-comment{ border-radius: 50%; height: 70px; width: 70px; }
+/* esitlos para los detalles del contenido del comentario */
+.item-comment .comment-user-details p{ line-height: 16px; }
+/* esitlos para los botones de accion del contenido del comentario */
+.item-comment .footer-content-comment .button{ -ms-align-items: center; align-items: center; color: #fff; display: -webkit-inline-flex; display: -moz-inline-flex; display: -ms-inline-flex; display: -o-inline-flex; display: inline-flex; height: 30px; justify-content: center; opacity: .7; padding: 7px; min-width: 40px; max-width: 60px }
+.item-comment .footer-content-comment .button .countdown{ -ms-align-items: center; align-items: center; display: -webkit-inline-flex; display: -moz-inline-flex; display: -ms-inline-flex; display: -o-inline-flex; display: inline-flex; height: 30px; }
+/* esitlos para los botones de accion del contenido del comentario cuanod hagan hover */
+.item-comment .footer-content-comment .button:hover{ opacity: 1; }
+
+/* estilos para el footer de los items del contenedor de mas post mas populares*/
+.item-comment { border: 0; border-bottom: 2px dashed rgba(0,0,0,.17); }
+/* estilos para el footer del último item del contenedor de mas post mas populares*/
+.item-comment:last-child { border: 0; border-bottom: 0px dashed rgba(0,0,0,.17); }
+
+
+@media(min-width: 767px)
+{
+	/* estilos para el contenedor de mas post mas populares*/
+	.content-img-more-popular{ overflow-x: hidden; justify-content: center; }
+	/* estilos para la imagen de los items del contenedor de mas post mas populares*/
+	.item-more-popular .img-more-popular{ height: 125px !important; width: 100% !important; }
+	/* estilos para el destacado de los items del contenedor de mas post mas populares*/
+	.highlight-item-more-popular{ right: -15px; margin-right: -45px; top: 10px; padding: 1px; width: 50%; -moz-transform: skew(-35deg, 25deg); -webkit-transform: skew(-35deg, 25deg); -o-transform: skew(-35deg, 25deg); -ms-transform: skew(-35deg, 25deg); transform: skew(-35deg, 25deg); }	
+}
+
+
+@media(min-width: 999px)
+{
+	/* estilos para el destacado de los items del contenedor de mas post mas populares*/
+	.highlight-item-more-popular{ margin-right: -20px; }	
+}

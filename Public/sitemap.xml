@@ -1,0 +1,13 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+ <!--
+ created with Free Online Sitemap Generator www.xml-sitemaps.com 
+-->
+    <url>
+        <!-- nombre de dominio o url -->
+        <loc>https://nombre_dominio.com/</loc>
+        <!-- última modificación -->
+        <lastmod>2019-01-22T17:11:36+00:00</lastmod>
+        <!-- prioridad del 0.0 al 1.0 -->
+        <priority>1.00</priority>
+    </url>
+</urlset>

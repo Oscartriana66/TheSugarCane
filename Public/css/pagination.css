@@ -1,0 +1,17 @@
+/* estilos del contenedor de la paginación*/
+.content_pagination{ -ms-align-items: center; align-items: center; display: -webkit-flex; display: -moz-flex; display: -ms-flex; display: -o-flex; display: flex; width: 100%; }
+/* estilos para cuando se quiera centrar el contenido de la paginación */
+.render-pagination.justify-content-center .content_pagination{ justify-content: center; }
+/* estilos para cuando se quiera ubicar al inicio el contenido de la paginación */
+.render-pagination.justify-content-start .content_pagination{ justify-content: flex-start; }
+/* estilos para cuando se quiera ubicar al final el contenido de la paginación */
+.render-pagination.justify-content-end .content_pagination{ justify-content: flex-end; }
+/* estilos de los botones de la paginación */
+.link_pagination, table a.link_pagination, .link_pagination_active, table a.link_pagination_active{ background: #F1F1F2; line-height: 40px; margin: 0 !important; height: 40px; text-align: center; width: 40px; }
+/* estilos de los botones de la paginación al hacer hover */
+.link_pagination:hover, table a.link_pagination:hover, .link_pagination:active, table a.link_pagination:active, .link_pagination:focus, table a.link_pagination:focus{ background: #ddd; font-weight: bold; }
+/* estilos del boton activado de la paginación */
+.link_pagination_active, table a.link_pagination_active{ background: #4C98F6; color: white; }
+
+
+.form-search input, .form-search select{ border-radius: 0 !important; border: 0 !important; box-shadow: none !important; border-bottom: 1px solid #ddd !important; padding: auto !important; padding-top: 10px !important; height: auto !important; transition-duration: .3s; }

@@ -1,0 +1,2 @@
+#evitamos que se puedan indexar todo la carpeta App del sistema generando un error 403
+Options -Indexes

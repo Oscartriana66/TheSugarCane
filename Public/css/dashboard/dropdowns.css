@@ -1,0 +1,73 @@
+/* CSS general para los paneles (todas las medidas) */
+/* Borde y fondo de los paneles */
+#panel-notifications, #panel-user { border-radius: 5px; background-color: white;}
+/* hovers de los links */
+#panel-notifications > a > div:hover, #panel-user ul li a:hover{ background-color: #F2F1F1 !important; }
+/* Quita el padding del ul y el div */
+#panel-shortcut, #panel-shortcut ul { padding: 0; }
+/* Fondo panel-shortcut */
+#panel-shortcut{ border-radius: 5px; background-color: #172b4d; }
+/* Gradiente */
+.bg-facturas{ background-image: linear-gradient(to right, #f5385a , #f55e38); }
+.bg-pedidos{ background-image: linear-gradient(to right, #fb6740 , #fbad40); } 
+.bg-cliente{ background-image: linear-gradient(to right, #11c0e5 , #1176ef); }
+.bg-movimiento{ background-image: linear-gradient(to right, #2dce8d , #2cc4c1); }
+.bg-promocion{ background-image: linear-gradient(to right, #8c65e0 , #b965e0); }
+/* div circulares para los iconos */
+.circle{ border-radius: 100%; width: 52px; height: 52px; }
+/* Links de usuario */
+#panel-user ul li a{ display: block; padding: 2px 7px;}
+/* Quitamos el padding de usuarios */
+#panel-user ul{ padding: 0; }
+/* Borde rayado de los links de panel-user */
+.border-dashed{ border-bottom: 1px dashed #E6E6E6 }
+/* estilos para los paneles */
+#panel-notifications, #panel-shortcut, #panel-user{ display: none; z-index: 9999; }
+/* estilos para la imagen de la notificacion */
+#panel-notifications .avatar img{ max-height: 60px; max-width: 60px; }
+
+#panel-notifications .content-notifications{ overflow-y: auto; max-height: 371.2px; }
+
+/*Posicion de los paneles*/
+#panel-notifications{ left: 105px; }
+#panel-shortcut{ left: 154px; }
+#panel-user{ left: 140px; }
+
+@media ( min-width: 500px )
+{	
+	#panel-user{ left: 170px; }
+}
+
+@media ( min-width: 500px )
+{	
+	#panel-user{ left: 190px; }
+}
+
+@media ( min-width: 580px )
+{	
+	#panel-user{ left: 250px; }
+}
+
+@media ( min-width: 768px )
+{	
+	/*Posicion de los paneles*/
+	#panel-notifications{ left: 118px; }
+	#panel-shortcut{ left: 168px; }
+	#panel-user{ left: 497px; }
+}
+
+@media ( min-width: 992px )
+{	
+	/*Posicion de los paneles*/
+	#panel-notifications{ left: 366px; }
+	#panel-shortcut{ left: 417px; }
+	#panel-user{ left: 727px; }
+}
+
+@media ( min-width: 1200px )
+{	
+	/*Posicion de los paneles*/
+	#panel-notifications{ left: 481px; }
+	#panel-shortcut{ left: 528px; }
+	#panel-user{ left: 870px; }
+}

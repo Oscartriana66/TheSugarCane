@@ -1,0 +1,10 @@
+# Versión: v1
+
+#Páginas que serán guardadas en la caché
+CACHE MANIFEST
+
+#Páginas que requieren conexión de red
+NETWORK
+
+#Páginas que en dado caso de que no se cargen las de caché, cargan estas
+FALLBACK
